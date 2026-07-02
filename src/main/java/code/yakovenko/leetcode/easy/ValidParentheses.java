@@ -13,9 +13,7 @@ public final class ValidParentheses {
 	);
 
 	public boolean isValid(String s) {
-		if (s.length() % 2 != 0) {
-			return false;
-		}
+		if (s.length() % 2 != 0) return false;
 
 		final Deque<Character> stack = new ArrayDeque<>();
 
