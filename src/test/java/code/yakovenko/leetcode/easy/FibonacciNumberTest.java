@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class FibonacciNumberTest {
+public final class FibonacciNumberTest {
 
 	private final FibonacciNumber solution = new FibonacciNumber();
 
