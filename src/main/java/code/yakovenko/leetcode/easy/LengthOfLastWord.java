@@ -4,7 +4,7 @@ public final class LengthOfLastWord {
 
 	public int lengthOfLastWord(String s) {
 		int i = s.length() - 1;
-		int maxLength = 0;
+		int length = 0;
 
 		while (i >= 0 && s.charAt(i) == ' ') {
 			i--;
@@ -12,9 +12,9 @@ public final class LengthOfLastWord {
 
 		while (i >= 0 && s.charAt(i) != ' ') {
 			i--;
-			maxLength++;
+			length++;
 		}
 
-		return maxLength;
+		return length;
 	}
 }
