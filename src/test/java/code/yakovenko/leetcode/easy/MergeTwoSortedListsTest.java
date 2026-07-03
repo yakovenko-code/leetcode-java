@@ -14,12 +14,8 @@ public final class MergeTwoSortedListsTest {
 	public void example1() {
 		assertThat(
 				solution.mergeTwoLists(
-						new ListNode(1,
-								new ListNode(2,
-										new ListNode(4))),
-						new ListNode(1,
-								new ListNode(3,
-										new ListNode(4)))
+						new ListNode(1, new ListNode(2, new ListNode(4))),
+						new ListNode(1, new ListNode(3, new ListNode(4)))
 				)
 		).usingComparator(
 				Comparators::listNode
