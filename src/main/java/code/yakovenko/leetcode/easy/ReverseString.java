@@ -3,10 +3,12 @@ package code.yakovenko.leetcode.easy;
 public final class ReverseString {
 
 	public void reverseString(char[] s) {
-		for (int i = 0; i < s.length / 2; i++) {
-			final char tmp = s[i];
-			s[i] = s[s.length - 1 - i];
-			s[s.length - 1 - i] = tmp;
+		int left = 0, right = s.length - 1;
+
+		while (left < right) {
+			final char tmp = s[left];
+			s[left++] = s[right];
+			s[right--] = tmp;
 		}
 	}
 }
