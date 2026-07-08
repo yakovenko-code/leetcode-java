@@ -9,6 +9,6 @@ public final class PercentageOfLetterInString {
 			count += s.charAt(i) == letter ? 1 : 0;
 		}
 
-		return (int) ((double) count / s.length() * 100);
+		return count * 100 / s.length();
 	}
 }
