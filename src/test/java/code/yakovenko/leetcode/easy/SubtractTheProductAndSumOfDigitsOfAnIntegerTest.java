@@ -1,0 +1,21 @@
+package code.yakovenko.leetcode.easy;
+
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+public final class SubtractTheProductAndSumOfDigitsOfAnIntegerTest {
+
+	private final SubtractTheProductAndSumOfDigitsOfAnInteger solution =
+			new SubtractTheProductAndSumOfDigitsOfAnInteger();
+
+	@Test
+	public void test1() {
+		assertThat(solution.subtractProductAndSum(234)).isEqualTo(15);
+	}
+
+	@Test
+	public void test2() {
+		assertThat(solution.subtractProductAndSum(4421)).isEqualTo(21);
+	}
+}
