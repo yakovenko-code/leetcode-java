@@ -1,0 +1,25 @@
+package code.yakovenko.leetcode.easy;
+
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+public final class ContainsDuplicateTest {
+
+	private final ContainsDuplicate solution = new ContainsDuplicate();
+
+	@Test
+	public void test1() {
+		assertThat(solution.containsDuplicate(new int[]{1, 2, 3, 1})).isTrue();
+	}
+
+	@Test
+	public void test2() {
+		assertThat(solution.containsDuplicate(new int[]{1, 2, 3, 4})).isFalse();
+	}
+
+	@Test
+	public void test3() {
+		assertThat(solution.containsDuplicate(new int[]{1, 1, 1, 3, 3, 4, 3, 2, 4, 2})).isTrue();
+	}
+}
