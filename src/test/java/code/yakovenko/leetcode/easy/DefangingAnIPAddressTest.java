@@ -1,0 +1,20 @@
+package code.yakovenko.leetcode.easy;
+
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+public final class DefangingAnIPAddressTest {
+
+	private final DefangingAnIPAddress solution = new DefangingAnIPAddress();
+
+	@Test
+	public void test1() {
+		assertThat(solution.defangIPaddr("1.1.1.1")).isEqualTo("1[.]1[.]1[.]1");
+	}
+
+	@Test
+	public void test2() {
+		assertThat(solution.defangIPaddr("255.100.50.0")).isEqualTo("255[.]100[.]50[.]0");
+	}
+}
