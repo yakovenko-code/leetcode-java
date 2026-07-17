@@ -1,0 +1,20 @@
+package code.yakovenko.leetcode.easy;
+
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
+public final class LeftAndRightSumDifferencesTest {
+
+	private final LeftAndRightSumDifferences solution = new LeftAndRightSumDifferences();
+
+	@Test
+	public void test1() {
+		assertThat(solution.leftRightDifference(new int[]{10, 4, 8, 3})).isEqualTo(new int[]{15, 1, 11, 22});
+	}
+
+	@Test
+	public void test2() {
+		assertThat(solution.leftRightDifference(new int[]{1})).isEqualTo(new int[]{0});
+	}
+}
