@@ -1,0 +1,20 @@
+package code.yakovenko.leetcode.easy;
+
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+public final class CountOfMatchesInTournamentTest {
+
+	private final CountOfMatchesInTournament solution = new CountOfMatchesInTournament();
+
+	@Test
+	public void test1() {
+		assertThat(solution.numberOfMatches(7)).isEqualTo(6);
+	}
+
+	@Test
+	public void test2() {
+		assertThat(solution.numberOfMatches(14)).isEqualTo(13);
+	}
+}
